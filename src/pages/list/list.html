@@ -4,7 +4,7 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <div *ngIf="selectedItem" padding>
-       <ion-title><b>{{selectedItem.title}}</b></ion-title>
+      <ion-title><b>{{selectedItem.title}}</b></ion-title>
     </div>
   </ion-navbar>
 </ion-header>
@@ -18,3 +18,11 @@
   </ion-list>
 
 </ion-content>
+
+<ion-footer>
+
+  <ion-toolbar color="primary">
+    <ion-searchbar placeholder="Rechercher" (ionInput)="filterItems($event)"></ion-searchbar>
+  </ion-toolbar>
+
+</ion-footer>

@@ -51,4 +51,14 @@ export class ListPage {
       sport: item
     });
   }
+
+  filterItems(ev: any) {
+    let val = ev.target.value;
+
+    if (val && val.trim() !== '') {
+      this.items = this.items.filter(function(item) {
+        return item.title.toLowerCase().includes(val.toLowerCase());
+      });
+    }
+  }
 }

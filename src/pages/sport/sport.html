@@ -11,6 +11,7 @@
 
 <ion-content>
     <div *ngIf="selectedItem" padding>
-       <p>{{selectedItem.description}}</p>
+        <img src='{{selectedItem.header}}'/>
+       <p class="description">{{selectedItem.description}}</p>
     </div>
 </ion-content>
