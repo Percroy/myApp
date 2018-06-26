@@ -10,11 +10,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-start></ion-icon>
-      {{item.title}}
-    </button>
-  </ion-list>
-
+    <div *ngIf="selectedItem" padding>
+       <p>{{selectedItem.description}}</p>
+    </div>
 </ion-content>
