@@ -33,13 +33,17 @@ export class ListPage {
           header:'https://i.pinimg.com/originals/50/66/35/506635afc4cbbdae3328e34912e8bdf3.jpg',
           title:'Football',
           icon:'football',
-          description:'Le football, est un sport collectif qui se joue principalement au pied avec un ballon sphérique. Il oppose deux équipes de onze joueurs dans un stade, que ce soit sur un terrain gazonné ou sur un plancher. L\'objectif de chaque camp est de mettre le ballon dans le but adverse, sans utiliser les bras, et de le faire plus souvent que l\'autre équipe.'
+          description:'Le football, est un sport collectif qui se joue principalement au pied avec un ballon sphérique. Il oppose deux équipes de onze joueurs dans un stade, que ce soit sur un terrain gazonné ou sur un plancher. L\'objectif de chaque camp est de mettre le ballon dans le but adverse, sans utiliser les bras, et de le faire plus souvent que l\'autre équipe.',
+          location:'Les Églantines, 51100 Reims',
+          horaire:'Lundi 20h00-22h00'
        },
        {
           header:'http://www.bhmpics.com/walls/rugby_players-other.jpg',
           title:'Rugby',
           icon:'american-football',
-          description:'Le rugby à XV, qui se joue par équipes de quinze joueurs sur le terrain avec des remplaçants, est la variante la plus pratiquée du rugby, famille de sports collectifs, dont les spécificités sont les mêlées et les touches, mettant aux prises deux équipes qui se disputent un ballon ovale, joué à la main et au pied. L\'objectif du jeu est de marquer plus de points que l\'adversaire, par des essais (donnant droit à des transformations), des buts de pénalité ou encore par des drops (coups de pied tombés dans le cours du jeu). De nos jours, l\'essai vaut cinq points et sept s\'il est transformé, le drop et le but (de pénalité) valent trois points chacun.'
+          description:'Le rugby à XV, qui se joue par équipes de quinze joueurs sur le terrain avec des remplaçants, est la variante la plus pratiquée du rugby, famille de sports collectifs, dont les spécificités sont les mêlées et les touches, mettant aux prises deux équipes qui se disputent un ballon ovale, joué à la main et au pied. L\'objectif du jeu est de marquer plus de points que l\'adversaire, par des essais (donnant droit à des transformations), des buts de pénalité ou encore par des drops (coups de pied tombés dans le cours du jeu). De nos jours, l\'essai vaut cinq points et sept s\'il est transformé, le drop et le but (de pénalité) valent trois points chacun.',
+          location:'Campus Moulin de la Housse, Chemin des Rouliers, 51100 Reims',
+          horaire:'Lundi 19h30-22h00'
        },
     ]
 
@@ -51,6 +55,11 @@ export class ListPage {
       sport: item
     });
   }
+
+  onCancel(ev) {
+     // Reset the field
+     ev.target.value = '';
+   }
 
   filterItems(ev: any) {
     let val = ev.target.value;

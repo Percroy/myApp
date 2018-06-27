@@ -13,5 +13,13 @@
     <div *ngIf="selectedItem" padding>
         <img src='{{selectedItem.header}}'/>
        <p class="description">{{selectedItem.description}}</p>
+
+       <br/>
+       <p>
+           <b>Lieu :</b> {{selectedItem.location}}<br />
+           <b>Horaires :</b> {{selectedItem.horaire}}<br />
+       </p>
+       <button ion-button full>Y aller !</button>
+
     </div>
 </ion-content>
