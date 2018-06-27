@@ -8,7 +8,9 @@
 ## Features
 ### Utilisation
 Listing de tous les sports disponibles au SUAPS de Reims
-
+Ajout d'une page "A propos"
+Commencement du system de Géolocalisation
+Commencement du système pour les réseaux sociaux
 ### Sports disponibles actuellement
 <ul>
   <li><strike><input type="checkbox"> Football</strike></li>
@@ -17,5 +19,9 @@ Listing de tous les sports disponibles au SUAPS de Reims
 </ul>
 
 ### Screen
+#### Liste des sports
 <img src="https://image.noelshack.com/fichiers/2018/26/3/1530105044-liste.png" alt="Liste des sports">
+#### Desciption
 <img src="https://image.noelshack.com/fichiers/2018/26/3/1530105047-desc.png" alt="Description des sports">
+#### A propos
+<img src="https://image.noelshack.com/fichiers/2018/26/3/1530113715-aboutpage.png" alt="AboutPage">
