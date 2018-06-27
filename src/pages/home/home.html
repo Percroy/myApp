@@ -3,16 +3,26 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <!-- <ion-title>Home</ion-title> -->
+    <ion-title>SUAPS de Reims</ion-title>
+    <!-- <ion-buttons end>
+      <button ion-button icon-only (click)="presentPopover($event)">
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons> -->
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+<ion-content>
+  <div class="about-header">
+    <img src="https://image.noelshack.com/fichiers/2018/26/3/1530113520-about.png" alt="ionic logo">
+  </div>
+  <div padding class="about-info">
+      <h4>Le Suaps c'est quoi ?</h4>
+      <p class="just">
+          <b>Bienvenue dans l'application du SUAPS de Reims, envie de pratiquer un sport durant vos études ?<br /><br />
+          Pour le loisir ou l'intégrer dans votre cursus ?</b><br /><br />
+          Le Service Universaire des Activités Physique et Sportives (SUAPS) met à votre disposition une multitude d'activités spotives traditionnelles et nouvelles, en salle ou en plein air, encadrées ou en pratique libre, du débutant au confirmé (5000 heures, 40 activités). <br/>
+          Équitation, golf, football, fitness, ... Pour cela, il vous suffit dès votre inscription informatique, de choisir de régler les "droits sportifs" d'un montant de 29€, si vous désirez vivre ces activités dans le cadre compétitif (quelque soit le niveau, local, régional, national, ou international), il suffit d'apporter au SUAPS tous les documents demandés dans le bulletin d'adhésison AS URCA
+      </p>
+    </div>
 </ion-content>

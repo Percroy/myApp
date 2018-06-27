@@ -25,7 +25,7 @@ export class MyApp {
     this.pages = [
       { title: 'Acceuil', component: HomePage },
       { title: 'Sports disponibles', component: ListPage },
-      { title: 'Nos réseaux', component: ReseauPage },
+      { title: 'Actualités', component: ReseauPage },
       { title: 'À propos', component: AboutPage }
     ];
 

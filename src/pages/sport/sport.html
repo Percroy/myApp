@@ -12,14 +12,89 @@
 <ion-content>
     <div *ngIf="selectedItem" padding>
         <img src='{{selectedItem.header}}'/>
-       <p class="description">{{selectedItem.description}}</p>
+       <p class="description">{{selectedItem.description}}</p><br/>
 
-       <br/>
-       <p>
+       <!-- <p>
            <b>Lieu :</b> {{selectedItem.location}}<br />
            <b>Horaires :</b> {{selectedItem.horaire}}<br />
-       </p>
+       </p> -->
+       <!-- <div class="row header">
+           <div class="col"><b>Lieu</b></div>
+           <div class="col"><b>Horaire</b></div>
+       </div>
+       <div *ngFor="let item of selectedItem" class="row">
+           <div class="col">{{selectedItem.location}}</div>
+           <div class="col">{{selectedItem.horaire}}</div>
+       </div> -->
+
+
+    <ion-grid>
+
+        <ion-row>
+            <ion-col>
+                <b>Lieu</b>
+            </ion-col>
+            <ion-col>
+                <b>Horaires</b>
+            </ion-col>
+        </ion-row>
+
+        <!-- <div *ngFor="let info of selectedItem.info"> -->
+            <ion-row>
+                <ion-col>
+                    {{selectedItem.info[1].location}}
+                </ion-col>
+                <ion-col>
+                    {{selectedItem.info[1].horaire}}
+                </ion-col>
+            </ion-row>
+            <div *ngIf="(selectedItem.info[2] !== nil)">
+                <ion-row>
+                    <ion-col>
+                        {{selectedItem.info[2].location}}
+                    </ion-col>
+                    <ion-col>
+                        {{selectedItem.info[2].horaire}}
+                    </ion-col>
+                </ion-row>
+            </div>
+            <div *ngIf="(selectedItem.info[3] !== nil)">
+                <ion-row>
+                    <ion-col>
+                        {{selectedItem.info[3].location}}
+                    </ion-col>
+                    <ion-col>
+                        {{selectedItem.info[3].horaire}}
+                    </ion-col>
+                </ion-row>
+            </div>
+            <div *ngIf="(selectedItem.info[4] !== nil)">
+                <ion-row>
+                    <ion-col>
+                        {{selectedItem.info[4].location}}
+                    </ion-col>
+                    <ion-col>
+                        {{selectedItem.info[4].horaire}}
+                    </ion-col>
+                </ion-row>
+            </div>
+        <!-- </div> -->
+
+<!--
+        <ion-row>
+            <ion-col>
+                {{selectedItem.info[2].location}}
+            </ion-col>
+            <ion-col>
+                {{selectedItem.info[2].horaire}}
+            </ion-col>
+        </ion-row> -->
+
+    </ion-grid>
+
        <button ion-button full>Y aller !</button>
 
     </div>
+
+
 </ion-content>

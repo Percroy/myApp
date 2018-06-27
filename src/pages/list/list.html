@@ -11,12 +11,109 @@
 
 <ion-content>
   <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-start></ion-icon>
-      {{item.title}}
-    </button>
-  </ion-list>
+      <ion-list-header>
+        SPORTS COLLECTIFS
+      </ion-list-header>
+      <div *ngFor="let item of getItems('SportsCollectifs')" >
+          <button ion-item (click)="itemTapped($event, item)" >
+            <ion-icon [name]="item.icon" item-start></ion-icon>
+            {{item.title}}
+          </button>
+      </div>
 
+      <ion-list-header>
+        FITNESS
+      </ion-list-header>
+      <div *ngFor="let item of getItems('Fitness')" >
+          <button ion-item (click)="itemTapped($event, item)" >
+            <ion-icon [name]="item.icon" item-start></ion-icon>
+            {{item.title}}
+          </button>
+      </div>
+
+      <ion-list-header>
+        BIEN ETRE ET FORME
+      </ion-list-header>
+      <div *ngFor="let item of getItems('BienEtre')" >
+          <button ion-item (click)="itemTapped($event, item)" >
+            <ion-icon [name]="item.icon" item-start></ion-icon>
+            {{item.title}}
+          </button>
+      </div>
+
+      <ion-list-header>
+        SPORTS DE RAQUETTES
+      </ion-list-header>
+      <div *ngFor="let item of getItems('SportsRaquette')" >
+          <button ion-item (click)="itemTapped($event, item)" >
+            <ion-icon [name]="item.icon" item-start></ion-icon>
+            {{item.title}}
+          </button>
+      </div>
+
+      <ion-list-header>
+        K-DANSE
+      </ion-list-header>
+      <div *ngFor="let item of getItems('KDanse')" >
+          <button ion-item (click)="itemTapped($event, item)" >
+            <ion-icon [name]="item.icon" item-start></ion-icon>
+            {{item.title}}
+          </button>
+      </div>
+
+      <ion-list-header>
+        COMBAT
+      </ion-list-header>
+      <div *ngFor="let item of getItems('Combat')" >
+          <button ion-item (click)="itemTapped($event, item)" >
+            <ion-icon [name]="item.icon" item-start></ion-icon>
+            {{item.title}}
+          </button>
+      </div>
+
+      <ion-list-header>
+        SPORTS AQUATIQUES
+      </ion-list-header>
+      <div *ngFor="let item of getItems('SportsAquatique')" >
+          <button ion-item (click)="itemTapped($event, item)" >
+            <ion-icon [name]="item.icon" item-start></ion-icon>
+            {{item.title}}
+          </button>
+      </div>
+
+      <ion-list-header>
+        DÉCOUVERTES
+      </ion-list-header>
+      <div *ngFor="let item of getItems('Decouvertes')" >
+          <button ion-item (click)="itemTapped($event, item)" >
+            <ion-icon [name]="item.icon" item-start></ion-icon>
+            {{item.title}}
+          </button>
+      </div>
+
+      <ion-list-header>
+        TIRS
+      </ion-list-header>
+      <div *ngFor="let item of getItems('Tirs')" >
+          <button ion-item (click)="itemTapped($event, item)" >
+            <ion-icon [name]="item.icon" item-start></ion-icon>
+            {{item.title}}
+          </button>
+      </div>
+
+      <ion-list-header>
+        PRÉP. CONCOURS DE LA FONCTIONS PUBLIQUE
+      </ion-list-header>
+      <!--  -->
+      <div *ngFor="let item of getItems('FonctionPublique')" >
+          <button ion-item (click)="itemTapped($event, item)" >
+            <ion-icon [name]="item.icon" item-start></ion-icon>
+            {{item.title}}
+          </button>
+      </div>
+
+
+  </ion-list>
 </ion-content>
 
 <!-- <ion-footer>
